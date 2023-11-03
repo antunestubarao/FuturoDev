@@ -1,0 +1,42 @@
+h3 {
+    color: brown;
+    font-size: 16pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: red;
+}
+
+#pCopa {
+    color: yellow;
+    letter-spacing: 2px;
+}
+
+ul > .listaCompras {
+    color: green;
+    list-style: square;
+}
+
+#containerTabelaCopa li {
+    color: blue;
+}
+
+#tabelaCopa {
+    list-style:lower-roman;
+}
+
+#containerListaCompras {
+    margin: 2px;
+    border: 5px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+    height: 150px;
+    background: url(/images/tomate.jpg);
+    background-size: 100%;
+}
+
+#username {
+    text-align: center;
+    font-weight: bold;
+}

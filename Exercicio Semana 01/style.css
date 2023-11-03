@@ -1,0 +1,71 @@
+body,
+ul,
+li,
+p {
+  
+  padding: 0px;
+  list-style: none;
+  font-size: 18pt;
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+  /* retira o sublinhado e a cor azul e coloca a cor informada abaixo */
+  color:red
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 24pt;
+  font-family: Arial;
+  font-variant-caps: all-small-caps;
+}
+h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 20pt;
+  font-family: Arial;
+  font-weight: bold;
+  padding-bottom: 100px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.profissional {
+  background: rgb(10, 219, 167);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  list-style: none;
+  font-size: 12pt;
+  font-family: Arial;
+  }
