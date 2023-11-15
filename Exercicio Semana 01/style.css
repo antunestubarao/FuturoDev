@@ -12,7 +12,7 @@ p {
 a {
   text-decoration: none;
   /* retira o sublinhado e a cor azul e coloca a cor informada abaixo */
-  color:red
+  color:white
 }
 
 h1 {
@@ -68,4 +68,5 @@ button {
   list-style: none;
   font-size: 12pt;
   font-family: Arial;
+  link-color: black
   }
