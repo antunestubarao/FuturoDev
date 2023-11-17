@@ -36,7 +36,16 @@
     console.log(elemento);
     console.log(elemento.innerHTML);
     
-    elemento.innerHTML = "Calculo de Frete 2";
+    //elemento.innerHTML = "Calculo de Frete 2";
 
     console.log(elemento.innerHTML);
+
+    const campo = document.getElementById("campo");
+    console.log(campo.value);
+    
+
+    function clicaVai(){
+        console.log(campo.value);
+        elemento.innerHTML = campo.value;
+    }
 
