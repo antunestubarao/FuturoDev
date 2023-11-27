@@ -1,0 +1,20 @@
+body,
+ul,
+li,
+p {
+  
+  padding: 0px;
+  list-style: none;
+  font-size: 18pt;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+ text-align: center; 
+}
+.input{
+
+    font-size: 14pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

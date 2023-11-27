@@ -1,3 +1,6 @@
+
+/* comentarios */
+
 /*div é com # e classe é com . */
 body,
 ul,
@@ -62,7 +65,4 @@ img {
   display: block;
   padding: 10px;
 }
-
-button {
-  display: block;
 
