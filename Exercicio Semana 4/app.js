@@ -33,12 +33,16 @@ let listacontrole = [
     },
 ];
 
-function removeItem (itemremovido) {
-    const novalistacontrole = listacontrole.filter((itemdalista) => {
-        return itemdalista !== itemremovido;
-    });
-    listacontrole = novalistacontrole;
-    atualizaTela();
+function atualizaTela() {
+    campolista.innerHTML = "";
+
+listacontrole.forEach((item) => {
+    const novoItem = criaItemLista(item);
+    campolista.appendChild(novoItem);
+});
+
+    document.querySelector("#qtdTotal").innerText = listacontrole.length;
+
 }
 
 function criaItemLista(item) {
@@ -56,17 +60,20 @@ const botaoRemover = novoItem.querySelector("button");
 botaoRemover.addEventListener("click", () => {
     removeItem(item);
 });
+
+const checkbox = novoItem.querySelector("input");
+checkbox.addEventListener("click", () => {
+    atualizarcheck(item);
+});
+
+function atualizarcheck(itemcheck) {
+    itemcheck.feito = !itemcheck.feito;
+}
+
 return novoItem;
 }
 
-function atualizaTela() {
-    campolista.innerHTML = "";
 
-listacontrole.forEach((item) => {
-    const novoItem = criaItemLista(item);
-    campolista.appendChild(novoItem);
-});
-}
 
 atualizaTela();
 
@@ -85,3 +92,14 @@ function adicionaitem() {
 };
 
 campoadicionar.addEventListener("click", adicionaitem);
+
+function removeItem (itemremovido) {
+    if (confirm("Você tem certeza que quer remover o item: " + itemremovido.nome + "?")){
+    const novalistacontrole = listacontrole.filter((itemdalista) => {
+        return itemdalista !== itemremovido;
+    });
+    listacontrole = novalistacontrole;
+    atualizaTela();
+}
+    
+}
