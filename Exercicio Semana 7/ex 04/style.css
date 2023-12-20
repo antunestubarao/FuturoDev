@@ -1,0 +1,39 @@
+body,
+ul,
+li,
+label,
+p {
+  margin: 5;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  min-height: 100%;
+  list-style: none;
+  font-size: 16pt;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(218, 222, 224)
+  
+}
+
+h1 {
+ text-align: center; 
+ color: rgb(8, 10, 116);
+}
+.input{
+
+    font-size: 14pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:active{
+  background-color: blueviolet;
+}
+
+img{
+  width: 30%;
+  border:solid 5px;
+  border-color: blueviolet;
+}
+
+
+
