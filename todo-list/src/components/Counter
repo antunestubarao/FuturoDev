@@ -1,0 +1,4 @@
+      <span style={{fontSize:30}}>{counter}</span>
+      <br/>
+      <br/>
+      <button onClick={() =>setCounter(counter + 1)}>Likes 💘 </button>
